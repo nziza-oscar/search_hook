@@ -21,3 +21,12 @@ const SimpleSearch = () => {
 }
 
 export default SimpleSearch
+
+
+// Limited data support: This approach only works with plain strings, making it impractical for complex data structures.
+
+// No support for nested objects: If your data has deeper structures (for example, { user: { name: "JavaScript" } }), this won’t work.
+
+// No typo tolerance: A slight misspelling like "javascrpt" won’t match "JavaScript", which can frustrate users.
+
+// Performance bottlenecks: Every keystroke triggers a full re-render, which can cause lag, especially with large datasets.
